@@ -115,7 +115,7 @@ data:
       plugin-name: bulkhead
       result-type: bulkhead
     spec:
-      image: quay.io/alika/sonobuoy-plugin-bulkhead:latest
+      image: bradgeesaman/sonobuoy-plugin-bulkhead:latest
       command: ["/bin/sh", "-c", "/run_checks.sh && sleep 3600"]
       env:
       - name: NODE_NAME
