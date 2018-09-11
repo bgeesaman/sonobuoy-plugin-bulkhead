@@ -137,6 +137,7 @@ data:
       - mountPath: /node
         name: root
         readOnly: false
+
 kind: ConfigMap
 metadata:
   labels:
