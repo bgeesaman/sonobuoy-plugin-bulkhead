@@ -175,7 +175,7 @@ data:
               value: '{{.MasterAddress}}'
             - name: RESULT_TYPE
               value: bulkhead
-            image: gcr.io/heptio-images/sonobuoy:master
+            image: gcr.io/heptio-images/sonobuoy:latest
             imagePullPolicy: Always
             name: sonobuoy-worker
             volumeMounts:
@@ -225,7 +225,7 @@ spec:
       valueFrom:
         fieldRef:
           fieldPath: status.podIP
-    image: gcr.io/heptio-images/sonobuoy:master
+    image: gcr.io/heptio-images/sonobuoy:latest
     imagePullPolicy: Always
     name: kube-sonobuoy
     volumeMounts:
